@@ -13,9 +13,15 @@ public class Main {
         obj.scanAndPrint(4, 4.0, "HackerRank ");
     }
 
+    public static void fnDayThree() {
+        DayThree obj = new DayThree();
+        obj.getInput();
+    }
+
     public static void main(String[] args) {
-        fnDayone();
-        fnDayTwo();
+       fnDayone();
+       fnDayTwo();
+       fnDayThree();
     }
 
 
