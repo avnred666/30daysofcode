@@ -18,11 +18,15 @@ public class Main {
         obj.getInput();
     }
 
-    public static void main(String[] args) {
-       fnDayone();
-       fnDayTwo();
-       fnDayThree();
+    public static void fnDayFour() {
+        DayFour obj = new DayFour();
+        obj.conditionCheck();
     }
 
-
+    public static void main(String[] args) {
+//       fnDayone();
+//       fnDayTwo();
+//       fnDayThree();
+         fnDayFour();
+    }
 }
