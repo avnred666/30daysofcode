@@ -1,5 +1,7 @@
 package ThirtyDaysOfCode;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void fnDayone() {
@@ -22,11 +24,29 @@ public class Main {
         DayFour obj = new DayFour();
         obj.conditionCheck();
     }
+    private static void fnDayFive() {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        for (int i = 0; i < T; i++) {
+            int age = sc.nextInt();
+            DayFive p = new DayFive(age);
+            p.amIOld();
+            for (int j = 0; j < 3; j++) {
+                p.yearPasses();
+            }
+            p.amIOld();
+            System.out.println();
+        }
+        sc.close();
+    }
+
 
     public static void main(String[] args) {
 //       fnDayone();
 //       fnDayTwo();
 //       fnDayThree();
-         fnDayFour();
+//       fnDayFour();
+         fnDayFive();
     }
+
 }
